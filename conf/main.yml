@@ -7,15 +7,11 @@ tasks:
     vars:
       a: c
     steps:
-      - tar -zxvf $a
-      - chmod -R
-      - replace
-      - run
+      - dir
+      - env
   - name: mysql
     vars:
       b: d
     steps:
-      - tar
-      - chmod
-      - replace $c
-      - run
+      - dir
+      - env
