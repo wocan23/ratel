@@ -1,0 +1,21 @@
+vars:
+  a: b
+  c: c
+
+tasks:
+  - name: jdk
+    vars:
+      a: c
+    steps:
+      - tar -zxvf $a
+      - chmod -R
+      - replace
+      - run
+  - name: mysql
+    vars:
+      b: d
+    steps:
+      - tar
+      - chmod
+      - replace $c
+      - run
